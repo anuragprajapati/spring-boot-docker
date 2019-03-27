@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker:
+
+before_install:
+  - docker build -t anuragprajapati/spring-boot-docker -f Dockerfile.dev .
+
+script:
+  - docker run anuragprajapati/spring-boot-docker
