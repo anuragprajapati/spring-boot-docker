@@ -2,7 +2,7 @@
 *.class
 !.gitignore
 *.MF
-/target
+#/target
 /bin
 
 # Log file
